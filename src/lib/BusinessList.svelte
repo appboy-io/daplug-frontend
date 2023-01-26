@@ -50,7 +50,7 @@
 <div class="business-showcase">
     {#if businesses.length}
         {#each businesses as business}
-            <div class="card w-96 bg-base-100 shadow-xl flex flex-col business-item">
+            <div class="card w-96 bg-base-100 shadow-xl flex flex-col business-item transition duration-300 hover:bg-base-300">
                 <figure><img src={pb.getFileUrl(business, business.logo, { 'thumb': '100x100'})} alt="logo" /></figure>
                 <div class="card-body items-center text-center">
                     <h2 class="card-title">{business.name}</h2>
@@ -124,5 +124,4 @@
             </div>
         </div>
     {/if}
-    
 </div>
